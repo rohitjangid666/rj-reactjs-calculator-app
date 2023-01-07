@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `yarn` or `npm i`
 
-Install needed dependencies.\
+Install needed dependencies.
 
 ### `yarn start` or `npm start`
 
