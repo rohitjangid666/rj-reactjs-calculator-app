@@ -1,0 +1,73 @@
+@import 'variables';
+@import url('./libs/react-datepicker.scss');
+
+.w-fit-content {
+  width: fit-content !important;
+}
+
+.error {
+  color: red;
+  font-size: 0.775rem;
+  font-weight: 500;
+  width: 100%;
+  display: inline-block;
+  text-align: start;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.wrapper {
+  background-image: url(https://images.unsplash.com/photo-1614850523060-8da1d56ae167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .app-container {
+    padding: $app-container-padding;
+    height: calc(100% - (2 * $app-container-padding));
+  }
+}
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.124) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 25%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  .card {
+    cursor: pointer;
+  }
+}
+
+.content-centered {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-picker-input {
+  border: 0;
+  background-color: #e3e3e3;
+  padding: 1rem;
+  border-radius: 15px;
+  color: rgb(82, 34, 255);
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  transition: all 250ms ease-in-out;
+  border: 2px solid rgb(255, 255, 255);
+  &:focus-visible {
+    outline: none;
+    border: 2px solid rgb(82, 34, 255);
+  }
+}
