@@ -44,6 +44,7 @@ function BMICalculator() {
     setBmi(roundOff(result));
   };
 
+
   return (
     <>
       <div className='content-centered' style={{ flexDirection: 'column' }}>
