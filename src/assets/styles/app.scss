@@ -5,6 +5,10 @@
   width: fit-content !important;
 }
 
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
 .error {
   color: red;
   font-size: 0.775rem;
@@ -40,9 +44,9 @@
 
 .card-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
   .card {
     cursor: pointer;
   }
@@ -55,12 +59,12 @@
   align-items: center;
 }
 
-.date-picker-input {
+.input {
   border: 0;
   background-color: #e3e3e3;
   padding: 1rem;
   border-radius: 15px;
-  color: rgb(82, 34, 255);
+  color: $primary-color;
   font-weight: 600;
   font-size: 1rem;
   font-family: 'Poppins';
@@ -68,6 +72,29 @@
   border: 2px solid rgb(255, 255, 255);
   &:focus-visible {
     outline: none;
-    border: 2px solid rgb(82, 34, 255);
+    border: 2px solid $primary-color;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: $primary-color;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  :first-child {
+    border-radius: 15px 0 0 15px;
+  }
+  :last-child {
+    border-radius: 0 15px 15px 0;
   }
 }

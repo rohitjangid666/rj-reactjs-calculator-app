@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import ReactDatePicker from 'react-datepicker';
 
+import BackButton from '../components/BackButton';
+
 function AgeCalculator() {
   const DEFAULT_TEXT = 'Your age is 0 years 0 months 0 days.';
   const [startDate, setStartDate] = useState(null);
@@ -94,12 +96,14 @@ function AgeCalculator() {
 
   return (
     <>
-      <div className='content-centered'>
+      <div className='content-centered' style={{ flexDirection: 'column' }}>
         <div className='card w-fit-content'>
+          <h2>AGE CALCULATOR</h2>
+
           <div className='date-picker-container'>
             <ReactDatePicker
               dateFormat='dd/MM/yyyy'
-              className='date-picker-input'
+              className='input'
               selected={startDate}
               onChange={date => {
                 setStartDate(date);
@@ -112,6 +116,8 @@ function AgeCalculator() {
 
           <p>{ageText}</p>
         </div>
+
+        <BackButton />
       </div>
     </>
   );

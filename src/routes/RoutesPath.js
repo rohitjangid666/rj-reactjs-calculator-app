@@ -4,6 +4,7 @@ import MainLayout from '../layout/MainLayout';
 
 const Home = lazy(() => import('../pages/Home'));
 const AgeCalculator = lazy(() => import('../pages/AgeCalculator'));
+const BMICalculator = lazy(() => import('../pages/BMICalculator'));
 
 const RoutesPath = {
   path: '/',
@@ -17,6 +18,10 @@ const RoutesPath = {
     {
       path: appUrls.AGE_CALCULATOR,
       element: <AgeCalculator />,
+    },
+    {
+      path: appUrls.BMI_CALCULATOR,
+      element: <BMICalculator />,
     },
   ],
 };

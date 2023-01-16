@@ -2,7 +2,10 @@ import { useNavigate } from 'react-router-dom';
 
 import appUrls from '../appUrls';
 
-const apps = [{ title: 'Age Calculator', path: appUrls.AGE_CALCULATOR }];
+const apps = [
+  { title: 'Age Calculator', path: appUrls.AGE_CALCULATOR },
+  { title: 'BMI Calculator', path: appUrls.BMI_CALCULATOR },
+];
 
 const Home = () => {
   const navigate = useNavigate();
